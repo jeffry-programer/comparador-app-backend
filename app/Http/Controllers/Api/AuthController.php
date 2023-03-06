@@ -59,6 +59,7 @@ class AuthController extends Controller
                     "status" => 1,
                     "msg" => "Usuario logueado exitosamente",
                     "access_token" => $token,
+                    "userId" => $user->idUsuario
                 ], 200);
             }else{
                 return response()->json([
